@@ -43,11 +43,18 @@ def preprocessXlData():
 def getColumn(i):
     print([row[i] for row in rs.data])
 #############   Data Import Function  Ends   ##########
-    
-    
-    
+
+def checkNull(i):
+    column = getColumn(i)
+    indices = [i for i,x in enumerate(column) if x == '']
+    if indices:
+        print(indices)
+    else:
+        print('Column', i, 'does not contain missing values')
     
 if __name__ == "__main__":
     path = r"TestData_Module3.xlsx"
     rs = readXlfile(path,'Sheet1')
-    getColumn(0)
+    #getColumn(0)
+    for i in range(4):
+        checkNull(i)    
