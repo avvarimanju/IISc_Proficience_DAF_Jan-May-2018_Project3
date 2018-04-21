@@ -41,14 +41,17 @@ def preprocessXlData():
 
 
 def getColumn(i):
-    print([row[i] for row in rs.data])
+    return([row[i] for row in rs.data])
+    
 #############   Data Import Function  Ends   ##########
 
-def checkNull(i):
+def checkNull(i,rs):
+    
     column = getColumn(i)
     indices = [i for i,x in enumerate(column) if x == '']
     if indices:
-        print(indices)
+        #print(indices)
+        print('Column', rs.varNames[i], 'contains missing values with indices',indices)
     else:
         print('Column', i, 'does not contain missing values')
     
@@ -57,4 +60,4 @@ if __name__ == "__main__":
     rs = readXlfile(path,'Sheet1')
     #getColumn(0)
     for i in range(4):
-        checkNull(i)    
+        checkNull(i,rs)    
