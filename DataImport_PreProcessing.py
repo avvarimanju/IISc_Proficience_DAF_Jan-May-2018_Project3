@@ -29,7 +29,7 @@ def readXlfile(filePath,sheetName):
     data = [] #make a data store
     for i in range(2,sheet.nrows):
         data.append(sheet.row_values(i)) #drop all the values in the rows into data
-    
+    print('Loaded data file {0} with {1} rows and {2} columns').format(filePath, len(dataset), len(dataset[0]))
     result.data = data
     return result
 
@@ -54,10 +54,33 @@ def checkNull(i,rs):
         print('Column', rs.varNames[i], 'contains missing values with indices',indices)
     else:
         print('Column', i, 'does not contain missing values')
+#
+        
+def checkOutliers(i,rs):
+    
+    column = getColumn(i)
+    datamean = mean(rs.data)
+    datastd = stdev(rs.data)
+        
+    indices = [i for i,x in enumerate(column) if ~ ((datamean - 3*datastd )<= x<= datamean + 3 * datastd)]
+    if indices:
+        #print(indices)
+        print('Column', rs.varNames[i], 'contains outliers with indices',indices)
+    else:
+        print('Column', i, 'does not contain outliers')
+
+            
+            
+            
+   
+    
+    
+#def checkDataType(i, rs):
+#    for 
     
 if __name__ == "__main__":
-    path = r"TestData_Module3.xlsx"
-    rs = readXlfile(path,'Sheet1')
+    filename = r"TestData_Module3.xlsx"
+    rs = readXlfile(filename,'Sheet1')
     #getColumn(0)
-    for i in range(4):
+    for i in range(len(rs.varNames)):
         checkNull(i,rs)    
