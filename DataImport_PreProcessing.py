@@ -6,10 +6,9 @@ Created for Data Import and Preprocessing model for Data Anlytics
 """
 
 #############   External Library Import Section  Starts   ##########
-
-
+import numpy as np
 import xlrd
-
+from Project4_Statistics_LinearRegression import *
 
 #############   External Library Import Section  Ends   ##########
 
@@ -29,7 +28,7 @@ def readXlfile(filePath,sheetName):
     data = [] #make a data store
     for i in range(2,sheet.nrows):
         data.append(sheet.row_values(i)) #drop all the values in the rows into data
-    print('Loaded data file {0} with {1} rows and {2} columns').format(filePath, len(dataset), len(dataset[0]))
+#    print('Loaded data file {0} with {1} rows and {2} columns').format(filePath, len(data), len(data[0]))
     result.data = data
     return result
 
@@ -59,10 +58,10 @@ def checkNull(i,rs):
 def checkOutliers(i,rs):
     
     column = getColumn(i)
-    datamean = mean(rs.data)
-    datastd = stdev(rs.data)
+    datamean = get_mean(column)
+    datastd = get_StandardDeviation(column)
         
-    indices = [i for i,x in enumerate(column) if ~ ((datamean - 3*datastd )<= x<= datamean + 3 * datastd)]
+    indices = [i for i,x in enumerate(column) if ((datamean + 3*datastd )<= x<= (datamean - 3 * datastd))]
     if indices:
         #print(indices)
         print('Column', rs.varNames[i], 'contains outliers with indices',indices)
@@ -70,7 +69,25 @@ def checkOutliers(i,rs):
         print('Column', i, 'does not contain outliers')
 
             
-            
+def zscoreNormalize(i,rs):
+    
+    result = holder()
+    column = np.asarray(getColumn(i))
+    datamean = get_mean(column)
+    datastd = get_StandardDeviation(column)
+    result = (column - datamean)/datastd
+    return result
+
+def minmaxNormalize(i,rs):
+    
+    result = holder()
+    column = np.asarray(getColumn(i))
+    datamax = max(column)
+    datamin = min(column)
+    result = (column - datamin)/(datamax-datamin)
+    return result
+        
+           
             
    
     
@@ -79,8 +96,9 @@ def checkOutliers(i,rs):
 #    for 
     
 if __name__ == "__main__":
-    filename = r"TestData_Module3.xlsx"
+    filename = "TestData_Module3.xlsx"
     rs = readXlfile(filename,'Sheet1')
+    rsN = minmaxNormalize(3,rs)
     #getColumn(0)
-    for i in range(len(rs.varNames)):
-        checkNull(i,rs)    
+#    for i in range(len(rs.varNames)):
+#        checkOutliers(i,rs)    
