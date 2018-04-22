@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>IISc_Proficience_DAF_Jan-May-2018_Project3/DataImport_PreProcessing.py at 615b977d33424fb289e6024d65bdba2945c8c627 · BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3</title>
+  <title>IISc_Proficience_DAF_Jan-May-2018_Project3/Project4_Statistics_LinearRegression.py at 615b977d33424fb289e6024d65bdba2945c8c627 · BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3</title>
     <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -37,10 +37,10 @@
     <meta property="og:image" content="https://avatars1.githubusercontent.com/u/38600995?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3" /><meta property="og:url" content="https://github.com/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3" /><meta property="og:description" content="IISc_Proficience_DAF_Jan-May-2018_Project3 - This repository contains the &quot;Data Preparation&quot; part of the whole project." />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODAzMzUzOjU2NDdmNjFhMGViODQ1ZTg2ZjRhZWQyOTFlNWRmMzE3Y2QzYzM4MTRiNDZjNTY4NDQyYTU0MGYxMzY2YWFhMDQ=--fa47437dc41a4561f192ad9655a5f483ad97174c">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjU3ODAzMzUzOjk4N2ZmNWJhZjY4NjNlMGQ0ZDhjNTA5NzljZWQxZTYyYmY3YzgzOGU2OTdlOTI2ZmIzYzg1ODQ3M2Q3OGU0ZWQ=--1657a13f970df09d322cd3588facb3af50e70c6c">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="EE47:3421:251B950:4705EC2:5ADC3822" data-pjax-transient>
+  <meta name="request-id" content="EE47:3421:251BCAF:4705F08:5ADC3823" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="EE47:3421:251B950:4705EC2:5ADC3822" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="11418035" /><meta name="octolytics-actor-login" content="avvarimanju" /><meta name="octolytics-actor-hash" content="f7b46720d9649e07260e5c882bb401a535cb39b5750ca22cc508b404ce35d2a8" />
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="EE47:3421:251BCAF:4705F08:5ADC3823" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="11418035" /><meta name="octolytics-actor-login" content="avvarimanju" /><meta name="octolytics-actor-hash" content="f7b46720d9649e07260e5c882bb401a535cb39b5750ca22cc508b404ce35d2a8" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -67,7 +67,7 @@
     <meta name="user-login" content="avvarimanju">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MzYzMzY4ZjVkN2QwZmZkNWRlOGZlMDNkNjZhMjBhNGVmYWZmNjk3MjU2MDY4NjYzZDc0MDk5YWI2NmFmZDJmZnx7InJlbW90ZV9hZGRyZXNzIjoiMjcuNy4xMDguMTgiLCJyZXF1ZXN0X2lkIjoiRUU0NzozNDIxOjI1MUI5NTA6NDcwNUVDMjo1QURDMzgyMiIsInRpbWVzdGFtcCI6MTUyNDM4MTczMSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="YzFhMjBhMWY4OGEwOTQ1NWNhOTNkMmZlNDYwYzI2OWY4OWQ0ZmNkNzliMGE4NDBhY2UzNWMzZmJiNTI4NWI0Nnx7InJlbW90ZV9hZGRyZXNzIjoiMjcuNy4xMDguMTgiLCJyZXF1ZXN0X2lkIjoiRUU0NzozNDIxOjI1MUJDQUY6NDcwNUYwODo1QURDMzgyMyIsInRpbWVzdGFtcCI6MTUyNDM4MTc0OCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
 
@@ -84,7 +84,7 @@
   <meta name="octolytics-dimension-user_id" content="38600995" /><meta name="octolytics-dimension-user_login" content="BhupalReddyP" /><meta name="octolytics-dimension-repository_id" content="130541469" /><meta name="octolytics-dimension-repository_nwo" content="BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="true" /><meta name="octolytics-dimension-repository_parent_id" content="128666691" /><meta name="octolytics-dimension-repository_parent_nwo" content="avvarimanju/IISc_Proficience_DAF_Jan-May-2018_Project3" /><meta name="octolytics-dimension-repository_network_root_id" content="128666691" /><meta name="octolytics-dimension-repository_network_root_nwo" content="avvarimanju/IISc_Proficience_DAF_Jan-May-2018_Project3" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -135,7 +135,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scoped-search-url="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/search" data-unscoped-search-url="/search" action="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
     <label class="form-control header-search-wrapper  js-chromeless-input-container">
-          <a class="header-search-scope no-underline" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">This repository</a>
+          <a class="header-search-scope no-underline" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">This repository</a>
       <input type="text"
         class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s,/"
@@ -255,7 +255,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="87DP12f0UKBuHYM4w8VPvjqfkdIGnFaTO71ZkArRMhsk5SnC91ZyKbIbkFUmzd3pRnP/HLXo1pP17GxgWr+elw==" />
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fgftu+pLq79pndQR4r4GkwpXW/SAa1X0OfraWFl3x9SpUguueumJNrWbx3wHtpTEdrs1OjMf1fT3q++oCRlrWA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -267,7 +267,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3n9VjmULVf98gATrLnRAXt+dtIbmgtO3zp50l+N/XE8JKrOb9al3dqCGF4bLfNIJo3HaSFX2U7cAz0FnsxHwww==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="0vJkAineOn6dIxnvJxRKrN96dWs5SAnBMhPwp77uUKgFp4IXuXwY90ElCoLCHNj7o5YbpYo8icH8QsVX7oD8JA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -303,7 +303,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VCBt4vfASCp9oowPLwsSKxZ5waEwpeWSSjepeJOB31OGLe+pdfjMP6Hddd4Ccz62g29d8eKjfi76fsgFLGyY7Q==" />      <input type="hidden" name="repository_id" id="repository_id" value="130541469" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="SB0j8oOmYYsK0dQ7DDLsNDvpwpAQmz79tIhkDJZuLJKaEKG5AZ7lntauLeohSsCprv9ewMKdpUEEwQVxKYNrLA==" />      <input type="hidden" name="repository_id" id="repository_id" value="130541469" class="form-control" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/subscription"
@@ -383,7 +383,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1UiPd3Fa9sJq71iS7AA/FZ5akk7XbvXIn2y9DZXSmRAXex2juwXHWzlYRmYXUFyaks9ch/8zKxSNy2N21NGb6g==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="b9a/mWXA+gDDh+bJ8eFFSHE4OS3GAOXijO/YeVBPCS2t5S1Nr5/LmZAw+D0KsSbHfa335O5dOz6eSAYCEUwL1w==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -398,7 +398,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1GhcpPYZPKf4263R9OblL8DMcIMpopF3/cHIpFV87nIzUwCuRZNZSV63ZpUFrI/cEdE0dmy2bx2E10givOC2Xg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="f1n6zuNLvoTPyFPByDal3SFMpe9cbNTApcSdRswIpqKYYqbEUMHbammkmIU5fM8u8FHhGhl4Kqrc0h3AJZT+jg==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -501,9 +501,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:8f894f31b60a1c465b346e804b6e790f -->
+  <!-- blob contrib key: blob_contributors:v21:5d864eab15b78342f625b03c015b77e0 -->
 
   <div class="file-navigation">
     
@@ -545,7 +545,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/Branch1/DataImport_PreProcessing.py"
+               href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/Branch1/Project4_Statistics_LinearRegression.py"
                data-name="Branch1"
                data-skip-pjax="true"
                rel="nofollow">
@@ -555,7 +555,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/master/DataImport_PreProcessing.py"
+               href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blob/master/Project4_Statistics_LinearRegression.py"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -598,12 +598,12 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" rel="nofollow" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/tree/615b977d33424fb289e6024d65bdba2945c8c627"><span>IISc_Proficience_DAF_Jan-May-2018_Project3</span></a></span></span><span class="separator">/</span><strong class="final-path">DataImport_PreProcessing.py</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" rel="nofollow" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/tree/615b977d33424fb289e6024d65bdba2945c8c627"><span>IISc_Proficience_DAF_Jan-May-2018_Project3</span></a></span></span><span class="separator">/</span><strong class="final-path">Project4_Statistics_LinearRegression.py</strong>
     </div>
   </div>
 
 
-  <include-fragment src="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/contributors/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py" class="commit-tease">
+  <include-fragment src="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/contributors/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py" class="commit-tease">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -620,9 +620,9 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/raw/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blame/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/commits/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/raw/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blame/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/commits/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">History</a>
     </div>
 
         <button class="btn-octicon disabled tooltipped tooltipped-nw"
@@ -643,9 +643,9 @@
   </div>
 
   <div class="file-info">
-      105 lines (74 sloc)
+      143 lines (132 sloc)
       <span class="file-info-divider"></span>
-    2.77 KB
+    4.06 KB
   </div>
 </div>
 
@@ -663,7 +663,7 @@
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s">Created for Data Import and Preprocessing model for Data Anlytics</span></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-s">Basic Statistic Functions and Simple Linear Regression with Bivariant Data</span></td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
@@ -671,41 +671,39 @@
       </tr>
       <tr>
         <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-s">@authors: Bhupal,Manjunath,Moumita and Ayushi</span></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-s">Function included</span></td>
       </tr>
       <tr>
         <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span></span></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Mean</span></td>
       </tr>
       <tr>
         <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Variance</span></td>
       </tr>
       <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>############   External Library Import Section  Starts   ##########</span></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    CoVariance</span></td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> numpy <span class="pl-k">as</span> np</td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Standard Deviation</span></td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> xlrd</td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Correlation Coefficient</span></td>
       </tr>
       <tr>
         <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> Project4_Statistics_LinearRegression <span class="pl-k">import</span> <span class="pl-k">*</span></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Threshold</span></td>
       </tr>
       <tr>
         <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-s">    Calculate M &amp; C to fit straight line</span></td>
       </tr>
       <tr>
         <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>############   External Library Import Section  Ends   ##########</span></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-s"><span class="pl-pds">&quot;&quot;&quot;</span></span></td>
       </tr>
       <tr>
         <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
@@ -714,372 +712,526 @@
       </tr>
       <tr>
         <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> numpy <span class="pl-k">as</span> np</td>
       </tr>
       <tr>
         <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>############   Class holder for results   ##########</span></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> matplotlib.pyplot <span class="pl-k">as</span> plot</td>
       </tr>
       <tr>
         <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">holder</span>:</td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">1</span></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Mean</span></td>
       </tr>
       <tr>
         <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_mean</span>(<span class="pl-smi">ds</span>):</td>
       </tr>
       <tr>
         <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>############   Data Import Function Starts   ##########</span></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Sum of dataset</span></td>
       </tr>
       <tr>
         <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">readXlfile</span>(<span class="pl-smi">filePath</span>,<span class="pl-smi">sheetName</span>):</td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line">    ds_tot <span class="pl-k">=</span> <span class="pl-c1">sum</span>(ds)</td>
       </tr>
       <tr>
         <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Count of Dataset</span></td>
       </tr>
       <tr>
         <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> holder()</td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">    cnt_of_ds <span class="pl-k">=</span> <span class="pl-c1">len</span>(ds)</td>
       </tr>
       <tr>
         <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line">    book <span class="pl-k">=</span> xlrd.open_workbook(filePath)</td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Mean of Dataset</span></td>
       </tr>
       <tr>
         <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line">    sheet <span class="pl-k">=</span> book.sheet_by_name(sheetName)</td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">    mean <span class="pl-k">=</span> ds_tot <span class="pl-k">/</span> <span class="pl-c1">float</span>(cnt_of_ds)</td>
       </tr>
       <tr>
         <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line">    result.varNames <span class="pl-k">=</span> sheet.row(<span class="pl-c1">0</span>)</td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> mean    </td>
       </tr>
       <tr>
         <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line">    result.ipDataType <span class="pl-k">=</span> sheet.row(<span class="pl-c1">1</span>)</td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line">    data <span class="pl-k">=</span> [] <span class="pl-c"><span class="pl-c">#</span>make a data store</span></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Variance</span></td>
       </tr>
       <tr>
         <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span> i <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">2</span>,sheet.nrows):</td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_variance</span>(<span class="pl-smi">ds</span>):</td>
       </tr>
       <tr>
         <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line">        data.append(sheet.row_values(i)) <span class="pl-c"><span class="pl-c">#</span>drop all the values in the rows into data</span></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Calculate Mean</span></td>
       </tr>
       <tr>
         <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    print(&#39;Loaded data file {0} with {1} rows and {2} columns&#39;).format(filePath, len(data), len(data[0]))</span></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">    row_mean <span class="pl-k">=</span> get_mean(ds)</td>
       </tr>
       <tr>
         <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line">    result.data <span class="pl-k">=</span> data</td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> pow((row - row_mean), 2) ==&gt; (X - X Mean)^2</span></td>
       </tr>
       <tr>
         <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> result</td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">    mean_difference_squared_ds <span class="pl-k">=</span> [<span class="pl-c1">pow</span>((row <span class="pl-k">-</span> row_mean), <span class="pl-c1">2</span>) <span class="pl-k">for</span> row <span class="pl-k">in</span> ds]</td>
       </tr>
       <tr>
         <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Sum of (X - X Mean)^2</span></td>
       </tr>
       <tr>
         <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">preprocessXlData</span>():</td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">    tot_diff_sqrd_values <span class="pl-k">=</span> <span class="pl-c1">sum</span>(mean_difference_squared_ds)</td>
       </tr>
       <tr>
         <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> variance (X - X Mean)^2 / N -1</span></td>
       </tr>
       <tr>
         <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> holder()</td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">    variance <span class="pl-k">=</span> tot_diff_sqrd_values <span class="pl-k">/</span> <span class="pl-c1">float</span>(<span class="pl-c1">len</span>(ds) <span class="pl-k">-</span> <span class="pl-c1">1</span>)    </td>
       </tr>
       <tr>
         <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> variance</td>
       </tr>
       <tr>
         <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> result</td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Covariance</span></td>
       </tr>
       <tr>
         <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_covariance</span>(<span class="pl-smi">ds_x</span>, <span class="pl-smi">ds_y</span>):    </td>
       </tr>
       <tr>
         <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">getColumn</span>(<span class="pl-smi">i</span>):</td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate mean for X</span></td>
       </tr>
       <tr>
         <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span>([row[i] <span class="pl-k">for</span> row <span class="pl-k">in</span> rs.data])</td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">    ds_x_mean <span class="pl-k">=</span> get_mean(ds_x)</td>
       </tr>
       <tr>
         <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate mean for Y</span></td>
       </tr>
       <tr>
         <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>############   Data Import Function  Ends   ##########</span></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">    ds_y_mean <span class="pl-k">=</span> get_mean(ds_y)</td>
       </tr>
       <tr>
         <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Count of Dataset</span></td>
       </tr>
       <tr>
         <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">checkNull</span>(<span class="pl-smi">i</span>,<span class="pl-smi">rs</span>):</td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">    ds_size <span class="pl-k">=</span> <span class="pl-c1">len</span>(ds_x)    </td>
       </tr>
       <tr>
         <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> tot_difference_values ==&gt; sum of (X - X Mean) * (Y - Y Mean)</span></td>
       </tr>
       <tr>
         <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code blob-code-inner js-file-line">    column <span class="pl-k">=</span> getColumn(i)</td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">    tot_difference_values <span class="pl-k">=</span> <span class="pl-c1">0.0</span></td>
       </tr>
       <tr>
         <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code blob-code-inner js-file-line">    indices <span class="pl-k">=</span> [i <span class="pl-k">for</span> i,x <span class="pl-k">in</span> <span class="pl-c1">enumerate</span>(column) <span class="pl-k">if</span> x <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&#39;</span><span class="pl-pds">&#39;</span></span>]</td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">for</span> i <span class="pl-k">in</span> <span class="pl-c1">range</span>(<span class="pl-c1">0</span>, ds_size):</td>
       </tr>
       <tr>
         <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> indices:</td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">        tot_difference_values <span class="pl-k">+=</span> (ds_x[i] <span class="pl-k">-</span> ds_x_mean) <span class="pl-k">*</span> (ds_y[i] <span class="pl-k">-</span> ds_y_mean)</td>
       </tr>
       <tr>
         <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span>print(indices)</span></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> covariance ==&gt; sum of (X - X Mean) * (Y - Y Mean) / N-1</span></td>
       </tr>
       <tr>
         <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>Column<span class="pl-pds">&#39;</span></span>, rs.varNames[i], <span class="pl-s"><span class="pl-pds">&#39;</span>contains missing values with indices<span class="pl-pds">&#39;</span></span>,indices)</td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">    covariance <span class="pl-k">=</span> tot_difference_values <span class="pl-k">/</span> <span class="pl-c1">float</span>(ds_size <span class="pl-k">-</span> <span class="pl-c1">1</span>)    </td>
       </tr>
       <tr>
         <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">else</span>:</td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> covariance</td>
       </tr>
       <tr>
         <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
-        <td id="LC55" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>Column<span class="pl-pds">&#39;</span></span>, i, <span class="pl-s"><span class="pl-pds">&#39;</span>does not contain missing values<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
-        <td id="LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span></span></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Standard Deviation</span></td>
       </tr>
       <tr>
         <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
-        <td id="LC57" class="blob-code blob-code-inner js-file-line">        </td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_StandardDeviation</span>(<span class="pl-smi">ds</span>):</td>
       </tr>
       <tr>
         <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
-        <td id="LC58" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">checkOutliers</span>(<span class="pl-smi">i</span>,<span class="pl-smi">rs</span>):</td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Calculate Variance</span></td>
       </tr>
       <tr>
         <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
-        <td id="LC59" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line">    variance <span class="pl-k">=</span> get_variance(ds)</td>
       </tr>
       <tr>
         <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
-        <td id="LC60" class="blob-code blob-code-inner js-file-line">    column <span class="pl-k">=</span> getColumn(i)</td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Standard Deviation ==&gt; Squareroot of Variance</span></td>
       </tr>
       <tr>
         <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
-        <td id="LC61" class="blob-code blob-code-inner js-file-line">    datamean <span class="pl-k">=</span> get_mean(column)</td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">    StandardDeviation <span class="pl-k">=</span> np.sqrt(variance)</td>
       </tr>
       <tr>
         <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
-        <td id="LC62" class="blob-code blob-code-inner js-file-line">    datastd <span class="pl-k">=</span> get_StandardDeviation(column)</td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> StandardDeviation</td>
       </tr>
       <tr>
         <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
-        <td id="LC63" class="blob-code blob-code-inner js-file-line">        </td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
-        <td id="LC64" class="blob-code blob-code-inner js-file-line">    indices <span class="pl-k">=</span> [i <span class="pl-k">for</span> i,x <span class="pl-k">in</span> <span class="pl-c1">enumerate</span>(column) <span class="pl-k">if</span> ((datamean <span class="pl-k">+</span> <span class="pl-c1">3</span><span class="pl-k">*</span>datastd )<span class="pl-k">&lt;=</span> x<span class="pl-k">&lt;=</span> (datamean <span class="pl-k">-</span> <span class="pl-c1">3</span> <span class="pl-k">*</span> datastd))]</td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Correlation Coefficient</span></td>
       </tr>
       <tr>
         <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
-        <td id="LC65" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> indices:</td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_CorrelationCoefficient</span>(<span class="pl-smi">ds_x</span>, <span class="pl-smi">ds_y</span>):</td>
       </tr>
       <tr>
         <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
-        <td id="LC66" class="blob-code blob-code-inner js-file-line">        <span class="pl-c"><span class="pl-c">#</span>print(indices)</span></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Covariance</span></td>
       </tr>
       <tr>
         <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
-        <td id="LC67" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>Column<span class="pl-pds">&#39;</span></span>, rs.varNames[i], <span class="pl-s"><span class="pl-pds">&#39;</span>contains outliers with indices<span class="pl-pds">&#39;</span></span>,indices)</td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">    cov_xy <span class="pl-k">=</span> get_covariance(ds_x, ds_y)</td>
       </tr>
       <tr>
         <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
-        <td id="LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">else</span>:</td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Standard Deviation of X</span></td>
       </tr>
       <tr>
         <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
-        <td id="LC69" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">print</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>Column<span class="pl-pds">&#39;</span></span>, i, <span class="pl-s"><span class="pl-pds">&#39;</span>does not contain outliers<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">    StdDev_x <span class="pl-k">=</span> get_StandardDeviation(ds_x)</td>
       </tr>
       <tr>
         <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
-        <td id="LC70" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Standard Deviation of Y</span></td>
       </tr>
       <tr>
         <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
-        <td id="LC71" class="blob-code blob-code-inner js-file-line">            </td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line">    StdDev_y <span class="pl-k">=</span> get_StandardDeviation(ds_y)</td>
       </tr>
       <tr>
         <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
-        <td id="LC72" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">zscoreNormalize</span>(<span class="pl-smi">i</span>,<span class="pl-smi">rs</span>):</td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Correlation Coefficient</span></td>
       </tr>
       <tr>
         <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
-        <td id="LC73" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line">    CorCof <span class="pl-k">=</span> cov_xy <span class="pl-k">/</span> (StdDev_x <span class="pl-k">*</span> StdDev_y)</td>
       </tr>
       <tr>
         <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
-        <td id="LC74" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> holder()</td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> CorCof</td>
       </tr>
       <tr>
         <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
-        <td id="LC75" class="blob-code blob-code-inner js-file-line">    column <span class="pl-k">=</span> np.asarray(getColumn(i))</td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line">    </td>
       </tr>
       <tr>
         <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
-        <td id="LC76" class="blob-code blob-code-inner js-file-line">    datamean <span class="pl-k">=</span> get_mean(column)</td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Calculate Threshold</span></td>
       </tr>
       <tr>
         <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
-        <td id="LC77" class="blob-code blob-code-inner js-file-line">    datastd <span class="pl-k">=</span> get_StandardDeviation(column)</td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_threshold</span>(<span class="pl-smi">ds</span>):</td>
       </tr>
       <tr>
         <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
-        <td id="LC78" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> (column <span class="pl-k">-</span> datamean)<span class="pl-k">/</span>datastd</td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Count of Dataset</span></td>
       </tr>
       <tr>
         <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
-        <td id="LC79" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> result</td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line">    ds_size <span class="pl-k">=</span> <span class="pl-c1">len</span>(ds)</td>
       </tr>
       <tr>
         <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
-        <td id="LC80" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Threshold</span></td>
       </tr>
       <tr>
         <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
-        <td id="LC81" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">minmaxNormalize</span>(<span class="pl-smi">i</span>,<span class="pl-smi">rs</span>):</td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">    threshold <span class="pl-k">=</span> <span class="pl-c1">1.96</span> <span class="pl-k">/</span> np.sqrt(ds_size)</td>
       </tr>
       <tr>
         <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
-        <td id="LC82" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> threshold</td>
       </tr>
       <tr>
         <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
-        <td id="LC83" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> holder()</td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
-        <td id="LC84" class="blob-code blob-code-inner js-file-line">    column <span class="pl-k">=</span> np.asarray(getColumn(i))</td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
-        <td id="LC85" class="blob-code blob-code-inner js-file-line">    datamax <span class="pl-k">=</span> <span class="pl-c1">max</span>(column)</td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> calculate M &amp; C using Least Squares Method</span></td>
       </tr>
       <tr>
         <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
-        <td id="LC86" class="blob-code blob-code-inner js-file-line">    datamin <span class="pl-k">=</span> <span class="pl-c1">min</span>(column)</td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line"><span class="pl-k">def</span> <span class="pl-en">get_mc</span>(<span class="pl-smi">ds_x</span>, <span class="pl-smi">ds_y</span>):</td>
       </tr>
       <tr>
         <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
-        <td id="LC87" class="blob-code blob-code-inner js-file-line">    result <span class="pl-k">=</span> (column <span class="pl-k">-</span> datamin)<span class="pl-k">/</span>(datamax<span class="pl-k">-</span>datamin)</td>
+        <td id="LC87" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Sum of X</span></td>
       </tr>
       <tr>
         <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
-        <td id="LC88" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> result</td>
+        <td id="LC88" class="blob-code blob-code-inner js-file-line">    tot_ds_x <span class="pl-k">=</span> <span class="pl-c1">sum</span>(ds_x)</td>
       </tr>
       <tr>
         <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
-        <td id="LC89" class="blob-code blob-code-inner js-file-line">        </td>
+        <td id="LC89" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate Sum of Y</span></td>
       </tr>
       <tr>
         <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
-        <td id="LC90" class="blob-code blob-code-inner js-file-line">           </td>
+        <td id="LC90" class="blob-code blob-code-inner js-file-line">    tot_ds_y <span class="pl-k">=</span> <span class="pl-c1">sum</span>(ds_y)</td>
       </tr>
       <tr>
         <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
-        <td id="LC91" class="blob-code blob-code-inner js-file-line">            </td>
+        <td id="LC91" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate X square ==&gt; (X * X)</span></td>
       </tr>
       <tr>
         <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
-        <td id="LC92" class="blob-code blob-code-inner js-file-line">   </td>
+        <td id="LC92" class="blob-code blob-code-inner js-file-line">    tot_ds_x_sqr <span class="pl-k">=</span> ds_x.dot(ds_x)</td>
       </tr>
       <tr>
         <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
-        <td id="LC93" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate X * Y</span></td>
       </tr>
       <tr>
         <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
-        <td id="LC94" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">    tot_ds_xy <span class="pl-k">=</span> ds_x.dot(ds_y)</td>
       </tr>
       <tr>
         <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
-        <td id="LC95" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>def checkDataType(i, rs):</span></td>
+        <td id="LC95" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>Count of Dataset</span></td>
       </tr>
       <tr>
         <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
-        <td id="LC96" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    for </span></td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line">    n <span class="pl-k">=</span> <span class="pl-c1">len</span>(ds_x)</td>
       </tr>
       <tr>
         <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
-        <td id="LC97" class="blob-code blob-code-inner js-file-line">    </td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate M</span></td>
       </tr>
       <tr>
         <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
-        <td id="LC98" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> <span class="pl-c1">__name__</span> <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">&quot;</span>__main__<span class="pl-pds">&quot;</span></span>:</td>
+        <td id="LC98" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> M = N * Sum of XY - Sum of X * Sum of Y / n*Sum of X square - Sum of X^2</span></td>
       </tr>
       <tr>
         <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
-        <td id="LC99" class="blob-code blob-code-inner js-file-line">    filename <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>TestData_Module3.xlsx<span class="pl-pds">&quot;</span></span></td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">    m <span class="pl-k">=</span> ((n <span class="pl-k">*</span> tot_ds_xy) <span class="pl-k">-</span> (tot_ds_x  <span class="pl-k">*</span> tot_ds_y)) <span class="pl-k">/</span> ((n <span class="pl-k">*</span> tot_ds_x_sqr) <span class="pl-k">-</span> (<span class="pl-c1">pow</span>((tot_ds_x), <span class="pl-c1">2</span>)))</td>
       </tr>
       <tr>
         <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
-        <td id="LC100" class="blob-code blob-code-inner js-file-line">    rs <span class="pl-k">=</span> readXlfile(filename,<span class="pl-s"><span class="pl-pds">&#39;</span>Sheet1<span class="pl-pds">&#39;</span></span>)</td>
+        <td id="LC100" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> Calculate C</span></td>
       </tr>
       <tr>
         <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
-        <td id="LC101" class="blob-code blob-code-inner js-file-line">    rsN <span class="pl-k">=</span> minmaxNormalize(<span class="pl-c1">3</span>,rs)</td>
+        <td id="LC101" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span> C = Sum of Y - m * Sum of X / n</span></td>
       </tr>
       <tr>
         <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
-        <td id="LC102" class="blob-code blob-code-inner js-file-line">    <span class="pl-c"><span class="pl-c">#</span>getColumn(0)</span></td>
+        <td id="LC102" class="blob-code blob-code-inner js-file-line">    c <span class="pl-k">=</span> (tot_ds_y <span class="pl-k">-</span> (m <span class="pl-k">*</span> tot_ds_x)) <span class="pl-k">/</span> n</td>
       </tr>
       <tr>
         <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
-        <td id="LC103" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    for i in range(len(rs.varNames)):</span></td>
+        <td id="LC103" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> m, c</td>
       </tr>
       <tr>
         <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
-        <td id="LC104" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>        checkOutliers(i,rs)    </span></td>
+        <td id="LC104" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td id="LC105" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>#import data from csv</span></td>
+      </tr>
+      <tr>
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td id="LC106" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>X = []</span></td>
+      </tr>
+      <tr>
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td id="LC107" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>Y = []</span></td>
+      </tr>
+      <tr>
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td id="LC108" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>for line in open(&#39;sample.csv&#39;):</span></td>
+      </tr>
+      <tr>
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td id="LC109" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    x, y = line.split(&#39;,&#39;)</span></td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    X.append(float(x))</span></td>
+      </tr>
+      <tr>
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td id="LC111" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    Y.append(float(y))</span></td>
+      </tr>
+      <tr>
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td id="LC112" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    </span></td>
+      </tr>
+      <tr>
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td id="LC113" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>#make the imported data into arrays</span></td>
+      </tr>
+      <tr>
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td id="LC114" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>X = np.array(X)</span></td>
+      </tr>
+      <tr>
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td id="LC115" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>Y = np.array(Y)</span></td>
+      </tr>
+      <tr>
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td id="LC116" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span></span></td>
+      </tr>
+      <tr>
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td id="LC117" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span># Calculate M and C</span></td>
+      </tr>
+      <tr>
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td id="LC118" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>m, c =get_mc(X,Y)</span></td>
+      </tr>
+      <tr>
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td id="LC119" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span></span></td>
+      </tr>
+      <tr>
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td id="LC120" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>#Fitting Straigt Line</span></td>
+      </tr>
+      <tr>
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td id="LC121" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span># Calculate the predicted Y values</span></td>
+      </tr>
+      <tr>
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td id="LC122" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>Yp = m*X + c</span></td>
+      </tr>
+      <tr>
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td id="LC123" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span></span></td>
+      </tr>
+      <tr>
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td id="LC124" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;X Mean: &#39;, get_mean(X))</span></td>
+      </tr>
+      <tr>
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td id="LC125" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;Y Mean: &#39;, get_mean(Y))</span></td>
+      </tr>
+      <tr>
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td id="LC126" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;X Variance: &#39;, get_variance(X))</span></td>
+      </tr>
+      <tr>
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td id="LC127" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;Y Variance: &#39;, get_variance(Y))</span></td>
+      </tr>
+      <tr>
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td id="LC128" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;CoVariance: &#39;, get_covariance(X,Y))</span></td>
+      </tr>
+      <tr>
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td id="LC129" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;X StandardDeviation: &#39;, get_StandardDeviation(X))</span></td>
+      </tr>
+      <tr>
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td id="LC130" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;Y StandardDeviation: &#39;, get_StandardDeviation(Y))    </span></td>
+      </tr>
+      <tr>
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td id="LC131" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;CorrelationCoefficient: &#39;, get_CorrelationCoefficient(X,Y))    </span></td>
+      </tr>
+      <tr>
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td id="LC132" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;Threshold: &#39;, get_threshold(X))</span></td>
+      </tr>
+      <tr>
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td id="LC133" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;M: &#39;, m)</span></td>
+      </tr>
+      <tr>
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td id="LC134" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>print (&#39;C: &#39;, c)</span></td>
+      </tr>
+      <tr>
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td id="LC135" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>    </span></td>
+      </tr>
+      <tr>
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td id="LC136" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span># Plot the data in scatter chart</span></td>
+      </tr>
+      <tr>
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td id="LC137" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>plot.scatter(X, Y)</span></td>
+      </tr>
+      <tr>
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td id="LC138" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>plot.show()</span></td>
+      </tr>
+      <tr>
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td id="LC139" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span></span></td>
+      </tr>
+      <tr>
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td id="LC140" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span># Plot the data in scatter chart with predicted Y values</span></td>
+      </tr>
+      <tr>
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td id="LC141" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>plot.scatter(X, Y)</span></td>
+      </tr>
+      <tr>
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td id="LC142" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>plot.plot(X, Yp)</span></td>
+      </tr>
+      <tr>
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td id="LC143" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>plot.show()</span></td>
       </tr>
 </table>
 
@@ -1091,7 +1243,7 @@
       <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
         <li><clipboard-copy class="dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
         <li><clipboard-copy class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blame/615b977d33424fb289e6024d65bdba2945c8c627/DataImport_PreProcessing.py">View git blame</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" href="/BhupalReddyP/IISc_Proficience_DAF_Jan-May-2018_Project3/blame/615b977d33424fb289e6024d65bdba2945c8c627/Project4_Statistics_LinearRegression.py">View git blame</a></li>
       </ul>
     </div>
   </div>
@@ -1121,7 +1273,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.24760s from unicorn-3215397695-r7xds">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.23173s from unicorn-3796505407-0r45m">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
