@@ -131,13 +131,7 @@ def minmaxNormalize(i,rs):
     result = (column - datamin)/(datamax-datamin)
     return result
         
-           
-            
-   
-    
-    
-#def checkDataType(i, rs):
-#    for 
+
     
 if __name__ == "__main__":
     filename = "TestData_Module3.xlsx"
