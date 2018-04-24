@@ -18,6 +18,8 @@ class holder:
     1
 
 #############   Data Import Function Starts   ##########
+
+# Reading Excel file
 def readXlfile(filePath,sheetName):
     
     result = holder()
@@ -44,6 +46,7 @@ def getColumn(i):
     
 #############   Data Import Function  Ends   ##########
 
+# Checking for null values
 def checkNull(i,rs):
     
     column = getColumn(i)
@@ -53,8 +56,8 @@ def checkNull(i,rs):
         print('Column', rs.varNames[i], 'contains missing values with indices',indices)
     else:
         print('Column', i, 'does not contain missing values')
-#
-        
+
+# Checking for Outliers      
 def checkOutliers(i,rs):
     
     column = getColumn(i)
@@ -67,7 +70,8 @@ def checkOutliers(i,rs):
         print('Column', rs.varNames[i], 'contains outliers with indices',indices)
     else:
         print('Column', i, 'does not contain outliers')
-        
+
+# Checking for Data types of the values present in the Input file
 def checkInputDatatypes(i,rs):
     
     column = np.asarray(getColumn(i))
@@ -112,7 +116,7 @@ def checkInputDatatypes(i,rs):
         else:
             print('Column', i, 'does not contain outliers')
 
-            
+# Normalization            
 def zscoreNormalize(i,rs):
     
     result = holder()
