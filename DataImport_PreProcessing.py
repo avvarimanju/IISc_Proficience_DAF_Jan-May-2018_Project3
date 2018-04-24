@@ -30,7 +30,7 @@ def readXlfile(filePath,sheetName):
     data = [] #make a data store
     for i in range(2,sheet.nrows):
         data.append(sheet.row_values(i)) #drop all the values in the rows into data
-#    print('Loaded data file {0} with {1} rows and {2} columns').format(filePath, len(data), len(data[0]))
+
     result.data = data
     return result
 
