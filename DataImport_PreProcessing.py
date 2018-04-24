@@ -18,8 +18,6 @@ class holder:
     1
 
 #############   Data Import Function Starts   ##########
-
-# Reading Excel file
 def readXlfile(filePath,sheetName):
     
     result = holder()
@@ -30,7 +28,7 @@ def readXlfile(filePath,sheetName):
     data = [] #make a data store
     for i in range(2,sheet.nrows):
         data.append(sheet.row_values(i)) #drop all the values in the rows into data
-
+#    print('Loaded data file {0} with {1} rows and {2} columns').format(filePath, len(data), len(data[0]))
     result.data = data
     return result
 
@@ -46,18 +44,17 @@ def getColumn(i):
     
 #############   Data Import Function  Ends   ##########
 
-# Checking for null values
 def checkNull(i,rs):
     
     column = getColumn(i)
     indices = [j for j,x in enumerate(column) if x == '']
     if indices:
         #print(indices)
-        print('Column', rs.varNames[i], 'contains missing values with indices',indices)
+        print('Column', rs.varNames[i],'contains',round(len(indices)*100/len(column),4), '% of missing values with indices',indices)
     else:
         print('Column', i, 'does not contain missing values')
-
-# Checking for Outliers      
+#
+        
 def checkOutliers(i,rs):
     
     column = getColumn(i)
@@ -67,11 +64,10 @@ def checkOutliers(i,rs):
     indices = [j for j,x in enumerate(column) if ((datamean + 3*datastd )<= x<= (datamean - 3 * datastd))]
     if indices:
         #print(indices)
-        print('Column', rs.varNames[i], 'contains outliers with indices',indices)
+        print('Column', rs.varNames[i],'contains',round(len(indices)*100/len(column),4), '% of outliers with indices',indices)
     else:
         print('Column', i, 'does not contain outliers')
-
-# Checking for Data types of the values present in the Input file
+        
 def checkInputDatatypes(i,rs):
     
     column = np.asarray(getColumn(i))
@@ -95,28 +91,29 @@ def checkInputDatatypes(i,rs):
                 
         if indices:
             #print(indices)
-            print('Column', rs.varNames[i], 'contains non integers with indices',indices)
+            print('Column', rs.varNames[i],'contains',round(len(indices)*100/len(column),4), '% of non integers with indices',indices)
         else:
             print('Column', i, 'does not contain non integers')
-    elif dataType == 'float':           
-        indices =[]
-        for x in column:
-            if x.isalpha():
-                indices.append(list(column).index(x))
-        if indices:
-            #print(indices)
-            print('Column', rs.varNames[i], 'contains non floats with indices',indices)
-        else:
-            print('Column', i, 'does not contain outliers')
+    elif dataType == 'float':
+        if column.dtype != 'float64':          
+            indices =[]
+            for x in column:
+                if x.isalpha():
+                    indices.append(list(column).index(x))
+            if indices:
+                #print(indices)
+                print('Column', rs.varNames[i],'contains',round(len(indices)*100/len(column),4), '% of non floats with indices',indices)
+            else:
+                print('Column', i, 'does not contain non floats')
     elif dataType == 'str':           
         indices = [j for j,x in enumerate(column) if x.replace('.','',1).isdigit()]
         if indices:
             #print(indices)
-            print('Column', rs.varNames[i], 'contains non strings with indices',indices)
+            print('Column', rs.varNames[i], 'contains',round(len(indices)*100/len(column),4), '% of non strings with indices',indices)
         else:
-            print('Column', i, 'does not contain outliers')
+            print('Column', i, 'does not contain non strings')
 
-# Normalization            
+            
 def zscoreNormalize(i,rs):
     
     result = holder()
@@ -135,10 +132,16 @@ def minmaxNormalize(i,rs):
     result = (column - datamin)/(datamax-datamin)
     return result
         
-
+           
+            
+   
+    
+    
+#def checkDataType(i, rs):
+#    for 
     
 if __name__ == "__main__":
-    filename = "TestData_Module3.xlsx"
+    filename = "TestData_Module3_test.xlsx"
     rs = readXlfile(filename,'Sheet1')
 #    rsN = minmaxNormalize(3,rs)
     #getColumn(0)
