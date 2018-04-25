@@ -52,7 +52,7 @@ def checkNull(i,rs):
         #print(indices)
         print('Column', rs.varNames[i],'contains',round(len(indices)*100/len(column),4), '% of missing values with indices',indices)
     else:
-        print('Column', i, 'does not contain missing values')
+        print('Column', rs.varNames[i], 'does not contain missing values')
 #
         
 def checkOutliers(i,rs):
